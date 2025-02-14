@@ -68,13 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-import { Swiper, SwiperSlide } from 'swiper'; // Импортируем Swiper и SwiperSlide
-import 'swiper/swiper-bundle.css'; // Подключаем стили Swiper
-import { Pagination, Navigation } from 'swiper'; // Подключаем модули Swiper
 
-// Инициализация Swiper с модулями
-
-const swiper = new Swiper('.offer__slider', {
+    // Инициализация Swiper
+    const swiper = new Swiper('.offer__slider', {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 20,
@@ -87,5 +83,5 @@ const swiper = new Swiper('.offer__slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+    });
   
-});
