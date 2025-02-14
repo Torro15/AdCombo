@@ -377,7 +377,7 @@ li {
     &__left {
         background-image: url(../images/balls-left.png);
         background-repeat: no-repeat;
-        max-width: 442px;
+        width: 442px;
         height: 447px;
         position: absolute;
         z-index: -1;
@@ -392,7 +392,7 @@ li {
     &__right {
         background-image: url(../images/balls-right.png);
         background-repeat: no-repeat;
-        max-width: 588px;
+        width: 588px;
         height: 519px;
         position: absolute;
         z-index: -1;
@@ -400,7 +400,7 @@ li {
         top: 33%;
         background-size: 83%;
         transform: rotate(-43deg);
-       
+
         @include respond-to(tablet) {
             display: none;
         }
@@ -418,12 +418,13 @@ li {
 
     &__slider {
         width: 100%;
-        height: 100%;
+        height: auto;
         max-width: 768px;
-        margin: 0 auto;
-        padding: 20px;
-        overflow: hidden;
+        margin: 0 auto 45px;
+        // padding: 20px 0;
+        overflow-x: hidden;
         position: relative;
+
     }
 
     &__item {
@@ -438,7 +439,7 @@ li {
 
         @include respond-to(mobile) {
             width: calc(100% - 20px);
-            min-height: 59px;
+            max-height: 59px;
         }
 
         &:last-child {
@@ -461,6 +462,12 @@ li {
                 height: 59px;
                 justify-content: end;
             }
+
+           
+        }
+        &.swiper-slide {
+            width: 100% !important;
+            max-height: 59px !important;
         }
 
         &:hover {
