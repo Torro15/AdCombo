@@ -392,12 +392,13 @@ li {
     &__right {
         background-image: url(../images/balls-right.png);
         background-repeat: no-repeat;
+        background-position: 50%;
         max-width: 588px;
         width: 50%;
         height: 519px;
         position: absolute;
         z-index: -1;
-        right: -2%;
+        right: 9%;
         top: 33%;
         background-size: 83%;
         transform: rotate(-43deg);
