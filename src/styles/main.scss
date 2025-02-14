@@ -392,7 +392,8 @@ li {
     &__right {
         background-image: url(../images/balls-right.png);
         background-repeat: no-repeat;
-        width: 588px;
+        max-width: 588px;
+        width: 50%;
         height: 519px;
         position: absolute;
         z-index: -1;
